@@ -4,7 +4,7 @@
 	 Plugin Name: Timetimer
 	 Plugin URI: https://github.com/rainerCH/timetimer
 	 Description: Timetimer
-	 Version: 0.1
+	 Version: 1.0.0
 	 Author: rdemmler
 	 Author URI: https://indielab.ch/
 	 */
@@ -32,7 +32,7 @@
 			 * Current version of the plugin.
 			 * @var string
 			 */
-			protected $version = '0.1';
+			protected $version = '1.0.0';
 			
 			private $plugin_path;
 			
