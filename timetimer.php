@@ -39,13 +39,8 @@
 			public function __construct()
 			{
 				add_shortcode( $this->tag, array( &$this, 'start' ) );
-//				add_shortcode( $this->tag . '-version', array( &$this, 'shortcode_version'));
-//				add_shortcode( $this->tag . '-item', array( &$this, 'shortcode_item'));
-//				remove_filter( 'the_content', 'wpautop' );
-				
-				// Define the URL path to the plugin...
 				$this->plugin_path = plugin_dir_url( __FILE__ );
-				// Enqueue the styles in they are not already...
+
 				if ( !wp_style_is( $this->tag, 'enqueued' ) ) {
 					wp_enqueue_style(
 					$this->tag,
